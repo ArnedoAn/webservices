@@ -36,7 +36,7 @@ if ($client->fault) {
       error_reporting(0);
 
             
-      echo "<td>".$row[0]."</td>\n<td>".$row[1]."</td><td><a href=\"clientAgo28.php?id=".$row[0]."&&opc=1\">Update </td>\n";
+      echo "<td>".$row[0]."</td>\n<td>".$row[1]."</td><td><a href=\"Update.php?id=".$row[0]."\">Update </td>\n";
       echo "</tr>\n";
          
     }

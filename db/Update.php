@@ -8,7 +8,7 @@ $client->soap_defencoding = 'utf-8';
 $client->encode_utf8 = false;
 $client->decode_utf8 = false;
 
-$cad1 = $_POST["cad1"];
+$cad1 = $_POST["id"];
 $cad2 = $_POST["cad2"];
 
 if ($err) {	echo 'Error en Constructor' . $err ; }
