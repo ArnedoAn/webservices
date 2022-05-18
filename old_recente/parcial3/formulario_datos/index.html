@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Datos Personales</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="estilos.css" type="text/css">
+    </head>
+    <body>
+
+        <div id="index">           
+            <form action="insert.php" method="POST">
+            	<table width="385" border="0">
+                    <tbody>
+                        <tr>
+                            <td><img src="datos_personales1.jpg" width="62" height="62"></td>
+                            <td align="center"><p id="titulo_principal">Datos Personales</p><br></td>
+                        </tr>                       
+                    </tbody>                    
+                    	<tr>
+                        	<td><br><br>Tipo Identificación:</td>
+                        	<td><br><br><select name="tipo_iden">
+					<option value="se">-Seleccionar-</option>
+ 					<option value="CC">Cedula</option>
+  					<option value="TI">Tarjeta de Identidad</option>
+  					<option value="CE">Cedula de Extranjeria</option>
+  					<option value="RC">Registro Civil</option>
+					</select></td>
+                                        
+                    	</tr>
+			<tr>
+                        	<td>Numero Identificacion:</td>
+                        	<td><input type="text" name="numero" id="numero"></td>
+                                        
+                    	</tr>
+			<tr>
+                        	<td>Nombres:</td>
+                        	<td><input type="text" name="nombre" id="nombre"></td>
+                                        
+                    	</tr>
+			<tr>
+                        	<td>Apellidos:</td>
+                        	<td><input type="text" name="apellido" id="apellido"></td>
+                                        
+                    	</tr>
+			<tr>
+                        	<td>Fecha de Nacimiento:</td>
+                        	<td><input type="date" name="date" id="date"></td>
+                                        
+                    	</tr>
+			<tr>
+                        	<td>Genero:</td>
+                        	<td><select name="sexo">
+					<option value="se">-Seleccionar-</option>
+ 					<option value="masculino">Maculino</option>
+  					<option value="femenino">Femenino</option>
+  					</select></td>
+                                        
+                    	</tr>
+			<tr>
+                        	<td>Escolaridad:</td>
+                        	<td><select name="esco">
+					<option value="se">-Seleccionar-</option>
+ 					<option value="primaria">Primaria</option>
+  					<option value="secundaria">Secundaria</option>
+  					<option value="universitaria">Universitaria</option>
+  					<option value="posgrado">Posgrado</option>
+					</select></td>
+                                        
+                    	</tr>
+			<tr>
+                        	<td>Estado Civil:</td>
+                        	<td><select name="estado">
+					<option value="se">-Seleccionar-</option>
+ 					<option value="soltero">Soltero</option>
+  					<option value="casado">Casado</option>
+  					<option value="union libre">Union Libre</option>
+  					</select></td>
+                                        
+                    	</tr>
+                        <tr>
+                        	<td><br><br><br><br><br><p>Desarrollado por: <p id="integrantes">Abelardo Ortega Centeno</td>
+                            	
+                        </tr>                                               
+                    	<tr>
+                        	<td><br><input type="submit" name="guardar" id="guardar" value="Guardar" /></td>
+                        	<td><br><input type="reset" name="borrar" id="borrar" value="Borrar"></td>
+                            
+                            <td><a href="http://localhost/webservices/formulario_datos2/delete.php/1" >DELETE</a></td>
+				
+                    	</tr>
+                </table>    
+            </form>    
+        </div>
+    </body>
+</html>

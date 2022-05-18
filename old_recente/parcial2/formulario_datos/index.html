@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Datos Personales</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="estilos.css" type="text/css">
+    </head>
+    <body>
+
+        <div id="index">           
+            <form action="uts_client.php" method="POST">
+            	<table width="385" border="0">
+                    <tbody>
+                        <tr>
+                            <td><img src="datos_personales1.jpg" width="62" height="62"></td>
+                            <td align="center"><p id="titulo_principal">Datos Personales</p><br></td>
+                        </tr>                       
+                    </tbody>                    
+                    	
+			<tr>
+                        	<td>Cedula:</td>
+                        	<td><input type="text" name="cedula" id="cedula"></td>
+                                        
+                    	</tr>
+			<tr>
+                        	<td>Nombre:</td>
+                        	<td><input type="text" name="nombre" id="nombre"></td>
+                                        
+                    	</tr>
+			
+                        <tr>
+                        	<td><br><br><br><br><br><p>Desarrollado por: <p id="integrantes">Abelardo Ortega Centeno</td>
+                            	
+                        </tr>                                               
+                    	<tr>
+                        	<td><br><input type="submit" name="guardar" id="guardar" value="Guardar" /></td>
+                        	<td><br><input type="reset" name="borrar" id="borrar" value="Borrar"></td>
+				
+                    	</tr>
+                </table>    
+            </form>    
+        </div>
+    </body>
+</html>

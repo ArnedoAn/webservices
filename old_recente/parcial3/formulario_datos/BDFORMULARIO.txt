@@ -1,0 +1,15 @@
+CREATE TABLE `datos` (
+	`id` INT(11) NOT NULL AUTO_INCREMENT,
+	`tipo_iden` VARCHAR(2) NULL DEFAULT '0' COLLATE 'utf8_spanish_ci',
+	`numero` VARCHAR(13) NULL DEFAULT '0' COLLATE 'utf8_spanish_ci',
+	`nombre` VARCHAR(50) NULL DEFAULT '0' COLLATE 'utf8_spanish_ci',
+	`apellido` VARCHAR(50) NULL DEFAULT '0' COLLATE 'utf8_spanish_ci',
+	`date` VARCHAR(50) NULL DEFAULT '0' COLLATE 'utf8_spanish_ci',
+	`sexo` VARCHAR(10) NULL DEFAULT '0' COLLATE 'utf8_spanish_ci',
+	`esco` VARCHAR(50) NULL DEFAULT '0' COLLATE 'utf8_spanish_ci',
+	`estado` VARCHAR(50) NULL DEFAULT '0' COLLATE 'utf8_spanish_ci',
+	PRIMARY KEY (`id`)
+)
+COLLATE='utf8_spanish_ci'
+ENGINE=InnoDB
+;

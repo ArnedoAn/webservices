@@ -1,0 +1,9 @@
+CREATE TABLE `cliente` (
+	`id` INT(11) NOT NULL AUTO_INCREMENT,
+	`cedula` VARCHAR(25) NOT NULL COLLATE 'utf16_spanish_ci',
+	`nombre` VARCHAR(50) NOT NULL COLLATE 'utf16_spanish_ci',
+	PRIMARY KEY (`id`),
+	UNIQUE INDEX `cedula` (`cedula`)
+)
+COLLATE='utf16_spanish_ci'
+ENGINE=InnoDB

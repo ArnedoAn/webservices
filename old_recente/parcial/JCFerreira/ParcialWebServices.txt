@@ -1,0 +1,52 @@
+Problema 1
+Explique con sus propias palabras que es un WebService
+Un web service es un conjunto de protocolos y estándares que sirven para intercambiar
+datos entre aplicaciones.
+
+Problema 2
+Explique con sus propias palabras la arquitectura funcional de un WebService (recuerden la representación del triángulo)
+Una descripción completa y precisa recibirá mayor puntaje.
+
+Problema 3
+Describa los parámetros, en orden, requeridos para registrar un WebService empleando la libreria nu_soap para php
+-include nusoap
+-creacion del servidor
+$server new soap-server();
+-configuracion del servidor
+$server -> configureWSDL('servidor':urn:servidor');
+urn->uniform resource name
+-registro del servidor
+$server->(1-nombre del metodo que ofrece el servidor
+          2-parametros necesarios para ejecutar el metodo "parametro"=>'XSD:String"-->XML sheme definition 
+          3-retorno del metodo "return"=> 'xsd:String"
+          4-"urn:metodo wsdl"-> descripcion formal del metodo WSDL
+          5-"urn:metodo wsdl #"metodo"-> como se llama el metodo al interior del sevidor
+          6-"rpc"-> tipo de invocacion
+          7-'encoded'->como viaja la informacion
+          8-'retorna datos metodo'->descripcion textual
+
+
+uts_server.php
+
+*function metodo(param1,param2){
+proces   bd,int poc local lect archivo
+return
+}
+
+-finalmente manejo de la peticion 
+
+$HTTP_RAM_POST_DATA=isset($HTTP_RAM_POST_DATA)? HTTP_POST_DATA:" ";
+$server -> service($HTTP_RAM_POST_DATA);
+
+Problema 4 (1)
+Diseñe un WebService que valide cuando un número es mayor que otro (es decir a > b ó b > a). Comprima su solución y
+envíela por medio de edmodo. En la hoja de exámen, describa el registro del webservice y el método que soluciona el 
+problema propuesto.
+
+Problema 5 (2)
+Diseñe un WebService que valide cuando un número es igual que otro (es decir a = b ó a <> b). Comprima su solución y
+envíela por medio de edmodo. En la hoja de exámen, describa el registro del webservice y el método que soluciona el 
+problema propuesto. 
+
+Problema 5 (3)
+Diseñe un WebService que valide cuando un número es mayor dentro de un conjunto de tres números (es decir a > b && a > c). Comprima su solución y envíela por medio de edmodo. En la hoja de exámen, describa el registro del webservice y el método que soluciona el problema propuesto. 

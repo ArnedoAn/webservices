@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>::: EL 1.5 PAL PARCIAL :::</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body >
+        <div id="index">           
+            <form action="uts_client.php" method="POST">
+            	<table width="550" border="0">
+                    <tbody>
+                        <tr>
+                            <td><img src="logo.jpg"></td>
+                            <td align="center"><br><br><h1><font face="roman">Web Services </font></h1><br></td>                            
+                        </tr>                    
+                    </tbody>                    
+                    	<tr>
+                        	<td><br><br>Seleccione una Entidad a consultar:</td>
+                        	<td><br><br><select name="acciones" id="select">
+                            				<option value="seleccion" selected>Seleccione una entidad</option>	
+                    						<option value="exito">Exito</option>
+								            <option value="ecopetrol">Ecopetrol</option>
+                   						
+           				  				</select></td>
+                    	</tr>
+                                             
+                    	<tr>
+                        	<td><br><br><input type="submit" name="obtener_valor" id="obtener_valor" value="Obtener valor" /><br><br></td>
+                            <td><br><input type="reset" name="borrar" id="borrar" value="Borrar"></td>
+                    	</tr>
+
+                        <tr>
+                            <td><br><p>Desarrollado por Camilo Sarmiento</p></td>
+                        </tr>
+                </table>    
+            </form>    
+        </div>
+    </body>
+</html>

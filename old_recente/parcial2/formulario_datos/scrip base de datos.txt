@@ -1,0 +1,8 @@
+CREATE TABLE `usuario` (
+	`id` INT(11) NOT NULL AUTO_INCREMENT,
+	`cedula` VARCHAR(50) NOT NULL DEFAULT '0' COLLATE 'utf8_spanish_ci',
+	`nombre` VARCHAR(50) NULL DEFAULT NULL COLLATE 'utf8_spanish_ci',
+	PRIMARY KEY (`id`)
+)
+COLLATE='utf8_spanish_ci'
+ENGINE=InnoDB
