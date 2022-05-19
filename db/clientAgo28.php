@@ -11,6 +11,8 @@ $client->encode_utf8 = false;
 $client->decode_utf8 = false;
 
 $cad1 = $_POST["cad1"];
+$cad2 = $_POST["cad2"];
+error_reporting(0);
 $opc = $_POST["opc"];
 
 if ($err) {	echo 'Error en Constructor' . $err ; }
@@ -49,14 +51,29 @@ switch($opc){
 				echo 'Error' . $err ;
 			} else {		// Muestra el resultado
 				echo 'Eliminación del registro';
+				error_log(0);
 				print_r ($result);
 				echo "<br><a href=\"menu.html\">Menu</a>";
 			}
 		}
 	break;	
-
-	default:
-		
+	
+	case 3:
+		$param = array('cadena1' => $cad1,'cadena2' => $cad2);//parametros de lo que defino en la funcion del metodo de generic_server.php
+		$result = $client->call('Update', $param);//me permite mostrar el resultado del metodo y sus parametros
+		if ($client->fault) {
+			echo 'fault';
+			print_r($result);
+		} else {	// Chequea errores
+			$err = $client->getError();
+			if ($err) {		// Muestra el error
+				echo 'Error' . $err ;
+			} else {		// Muestra el resultado
+				echo 'Actualización del registro';
+				print_r ($result);
+				header("location:Leer.php");
+			}
+		}
 	break;	
 }
 

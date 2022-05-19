@@ -10,7 +10,7 @@ $client->decode_utf8 = false;
 
 if ($err) {	echo 'Error en Constructor' . $err ; }
 
-$param = array('cadena' => 'a');//parametros de lo que defino en la funcion del metodo de generic_server.php
+$param = array('cadena' => "none");//parametros de lo que defino en la funcion del metodo de generic_server.php
 $result = $client->call('Read', $param);//me permite mostrar el resultado del metodo y sus parametros
 if ($client->fault) {
   echo 'fault';
@@ -42,7 +42,8 @@ if ($client->fault) {
     }
     echo "</table>\n";
     echo "</div>\n";
-
+    echo "<br><br>";
+    echo "<center><a href=\"menu.html\">Menu</a></center>";
     echo "</body>\n";
     echo "</html>\n";
       //echo $x."<br>";

@@ -72,7 +72,13 @@ function Read($cadena) {
     $retorno ="";
     // Create connection
     $conn = new mysqli($servername, $username, $password, $dbname);
-    $sql="SELECT * FROM data";
+    if($cadena=="none"){
+        $sql="SELECT * FROM data";
+    }
+    else{
+        $sql="SELECT * FROM data WHERE id='$cadena'";
+    }
+    
     $result = $conn->query($sql);
     if ($result->num_rows > 0) {
         while($row = $result->fetch_assoc()) {
@@ -94,7 +100,7 @@ function Update($cadena1,$cadena2) {
     $dbname = "data";
     // Create connection
     $conn = new mysqli($servername, $username, $password, $dbname);
-    $sql="UPDATE data SET datum = '".$cadena1."' WHERE id=".$cadena2;
+    $sql="UPDATE data SET datum = '".$cadena2."' WHERE id=".$cadena1;
        
     if($conn->query($sql)===TRUE){
         $conn->close();
