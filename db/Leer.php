@@ -49,15 +49,6 @@ if ($client->fault) {
       //echo $x."<br>";
     
   
-  /*echo "<html>\n";
-  echo "\t<head>\n";
-  echo "\t\t<title>Listar Datos</title>\n";
-  echo "\t\t<meta http-equiv= \"refresh\" content=\"5\" />\n";
-  echo "\t\t<meta charset=\"UTF-8\"/>\n";
-  echo "\t</head>\n";
-  echo "\t<body>\n";
-  
-  */
 }
 }
 
